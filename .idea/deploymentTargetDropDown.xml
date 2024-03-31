@@ -5,6 +5,9 @@
       <entry key="FirstScreenActivity">
         <State />
       </entry>
+      <entry key="MenuScreenActivity">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
