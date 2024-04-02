@@ -21,12 +21,9 @@ public class FirstScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first_screen);
 
         button = findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FirstScreenActivity.this, MenuScreenActivity.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(v -> {
+            Intent intent = new Intent(FirstScreenActivity.this, MenuScreenActivity.class);
+            startActivity(intent);
         });
     }
 }
