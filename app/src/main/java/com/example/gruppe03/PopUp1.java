@@ -3,10 +3,13 @@ package com.example.gruppe03;
 import static android.content.ContentValues.TAG;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,45 +17,60 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class FirstScreenActivity extends AppCompatActivity {
+public class PopUp1 extends AppCompatActivity {
 
-    private Button button;
+    public ImageButton buttonZweiSpieler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_first_screen);
+        setContentView(R.layout.activity_pop_up1);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
 
-        button = findViewById(R.id.button1);
-        button.setOnClickListener(v -> {
-            Intent intent = new Intent(FirstScreenActivity.this, MenuScreenActivity.class);
-            startActivity(intent);
+        buttonZweiSpieler = findViewById(R.id.imageButton5);
+
+        buttonZweiSpieler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+                startActivity(intent);
+            }
         });
     }
+
     @Override
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "onStart");
         // Hier können zusätzliche Initialisierungen und Vorbereitungen erfolgen
     }
+
     @Override
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "onResume");
-    // Aktualisierungen der UI und der Daten können hier erfolgen
+        // Aktualisierungen der UI und der Daten können hier erfolgen
     }
+
     @Override
     protected void onPause() {
         super.onPause();
         Log.d(TAG, "onPause");
         // Speichern von Zuständen und Freigeben von Ressourcen, die nicht mehr benötigt werden
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         Log.d(TAG, "onStop");
         // Optionales Aufräumen, wenn die Activity gestoppt wird
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

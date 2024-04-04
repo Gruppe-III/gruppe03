@@ -1,9 +1,18 @@
 package com.example.gruppe03;
 
+import static android.content.ContentValues.TAG;
+
+import android.content.Intent;
+import android.graphics.Point;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.Layout;
+import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -16,6 +25,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MenuScreenActivity extends AppCompatActivity {
     public ImageButton ImageButton1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,20 +42,45 @@ public class MenuScreenActivity extends AppCompatActivity {
         ImageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showPopup();
+                Intent intent = new Intent(MenuScreenActivity.this, PopUp1.class);
+                startActivity(intent);
             }
         });
-
     }
-    private void showPopup() {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-        View popupView = inflater.inflate(R.layout.popup, null);
 
-        int width = 1300;
-        int height = 800;
-        boolean focusable = true;
-        PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart");
+        // Hier können zusätzliche Initialisierungen und Vorbereitungen erfolgen
+    }
 
-        popupWindow.showAtLocation(findViewById(android.R.id.content), Gravity.CENTER, 0, 0);
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume");
+        // Aktualisierungen der UI und der Daten können hier erfolgen
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+        // Speichern von Zuständen und Freigeben von Ressourcen, die nicht mehr benötigt werden
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop");
+        // Optionales Aufräumen, wenn die Activity gestoppt wird
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+        // Freigeben von Ressourcen und Beenden von Hintergrundprozessen
     }
 }
+
