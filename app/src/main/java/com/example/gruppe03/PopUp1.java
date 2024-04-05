@@ -20,6 +20,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class PopUp1 extends AppCompatActivity {
 
     public ImageButton buttonZweiSpieler;
+    public int REQUEST_CODE = 0;
+    public ImageButton buttonDreiSpieler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +39,14 @@ public class PopUp1 extends AppCompatActivity {
         buttonZweiSpieler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                REQUEST_CODE = 2;
                 Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
-                startActivity(intent);
+                intent.putExtra("rC", REQUEST_CODE);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
-    }
+
+}
 
     @Override
     protected void onStart() {

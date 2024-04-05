@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Gruppe03"
         tools:targetApi="31">
         <activity
+            android:name=".FourPlayers"
+            android:exported="true" />
+        <activity
             android:name=".ThreePlayers"
             android:exported="true" />
         <activity
