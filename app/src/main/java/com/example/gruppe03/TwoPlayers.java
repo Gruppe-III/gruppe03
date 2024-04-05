@@ -1,9 +1,10 @@
 package com.example.gruppe03;
 
-import static android.content.ContentValues.TAG;
-
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class TwoPlayers extends AppCompatActivity {
 
+    public ImageButton TwoPlayersCheck;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +26,28 @@ public class TwoPlayers extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        int rC = getIntent().getIntExtra("rC", 0);
+
+        TwoPlayersCheck = findViewById(R.id.ToCheck);
+        int rC = getIntent().getIntExtra("requestCode", 0);
+        TwoPlayersCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(rC==2)
+                {
+                    //Intent to game field
+                }
+                if(rC==3)
+                {
+                    Intent intent = new Intent(TwoPlayers.this, ThreePlayers.class);
+                    startActivity(intent);
+                }
+                if(rC==4)
+                {
+                    Intent intent = new Intent(TwoPlayers.this, FourPlayers.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
     }
 }

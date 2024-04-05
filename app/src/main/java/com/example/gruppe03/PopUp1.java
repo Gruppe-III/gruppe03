@@ -20,8 +20,9 @@ import androidx.core.view.WindowInsetsCompat;
 public class PopUp1 extends AppCompatActivity {
 
     public ImageButton buttonZweiSpieler;
-    public int REQUEST_CODE = 0;
     public ImageButton buttonDreiSpieler;
+    public ImageButton buttonVierSpieler;
+    public int REQUEST_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +36,33 @@ public class PopUp1 extends AppCompatActivity {
         });
 
         buttonZweiSpieler = findViewById(R.id.imageButton5);
+        buttonDreiSpieler = findViewById(R.id.imageButton6);
+        buttonVierSpieler = findViewById(R.id.imageButton7);
 
         buttonZweiSpieler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 REQUEST_CODE = 2;
                 Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
-                intent.putExtra("rC", REQUEST_CODE);
+                intent.putExtra("requestCode", REQUEST_CODE);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+        buttonDreiSpieler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                REQUEST_CODE = 3;
+                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+                intent.putExtra("requestCode", REQUEST_CODE);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+        buttonVierSpieler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                REQUEST_CODE = 4;
+                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+                intent.putExtra("requestCode", REQUEST_CODE);
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });

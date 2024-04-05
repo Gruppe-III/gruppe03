@@ -1,6 +1,9 @@
 package com.example.gruppe03;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class FourPlayers extends AppCompatActivity {
 
+    public ImageButton FourPlayersCheck;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +24,14 @@ public class FourPlayers extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        FourPlayersCheck = findViewById(R.id.ToCheck);
+        FourPlayersCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent to game field
+            }
         });
     }
 }
