@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".TwoPlayers">
+    tools:context="com.example.gruppe03.TwoPlayers">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="55dp"
         android:allowUndo="false"
         android:fontFamily="sans-serif-medium"
         android:text="Spieler 1"
@@ -42,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-medium"
         android:text="Farbe:"
         android:textColor="#EB8240"
@@ -54,14 +55,14 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="221dp"
+        android:layout_marginStart="478dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="sans-serif-medium"
         android:text="Spieler 2"
         android:textColor="#EB8240"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
@@ -83,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="478dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-medium"
         android:text="Farbe:"
         android:textColor="#EB8240"
@@ -94,9 +96,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="200dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="132dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -105,7 +107,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:hint="Spielername"
-            android:textSize="24sp"
+            android:textSize="20sp"
             tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -114,7 +116,7 @@
         android:layout_width="110dp"
         android:layout_height="154dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
 
@@ -168,7 +170,7 @@
         android:layout_width="110dp"
         android:layout_height="154dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
@@ -220,9 +222,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="200dp"
-        android:layout_height="43dp"
+        android:layout_height="60dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="112dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -230,7 +232,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Spielername"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageButton
