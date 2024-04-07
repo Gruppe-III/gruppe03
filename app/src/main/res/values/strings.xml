@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Spielbrett - Gruppe 3</string>
-</resources>
+        <string name="user">user</string>
+        <string name="lottiKarotti">lottikarotti</string>
+        <string name="buttonOpenRoom">open room</string>
+        <string name="buttonJoinRoom">join room</string>
+        <string name="instructions">instructions</string>
+        <string name="highscore">highscore ranking</string>
+        <string name="settings">settings</string>
+        <string name="about">about</string>
+        <string name="cc">(c)_gruppe_D_3</string>
+        <string name="marginTop">8dp</string>
+        <string name="marginStart">8dp</string>
+        <string name="marginEnd">8dp</string>
+        <string name="backgroundDescription">backgroundlk</string>
+        <string name="createUser">create User</string>
+        <string name="editUserName">user name</string>
+        <string name="enter_user_name">Enter User Name</string>
+        <string name="backButton">backToMainMenu</string>
+    </resources>
