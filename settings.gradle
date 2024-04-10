@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Spielbrett - Gruppe 3"
+rootProject.name = "WebSocketDemo-App"
 include ':app'

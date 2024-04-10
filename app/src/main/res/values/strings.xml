@@ -1,20 +1,29 @@
 <resources>
-    <string name="app_name">Spielbrett - Gruppe 3</string>
-        <string name="user">user</string>
-        <string name="lottiKarotti">lottikarotti</string>
-        <string name="buttonOpenRoom">open room</string>
-        <string name="buttonJoinRoom">join room</string>
-        <string name="instructions">instructions</string>
-        <string name="highscore">highscore ranking</string>
-        <string name="settings">settings</string>
-        <string name="about">about</string>
-        <string name="cc">(c)_gruppe_D_3</string>
-        <string name="marginTop">8dp</string>
-        <string name="marginStart">8dp</string>
-        <string name="marginEnd">8dp</string>
-        <string name="backgroundDescription">backgroundlk</string>
-        <string name="createUser">create User</string>
-        <string name="editUserName">user name</string>
-        <string name="enter_user_name">Enter User Name</string>
-        <string name="backButton">backToMainMenu</string>
-    </resources>
+    <string name="app_name">WebSocketDemoApp</string>
+    <!--for user_activity-->
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_update">Update</string>
+    <string name="hint_enter_username">Enter user name</string>
+
+
+    <!--old Ressources-->
+    <!--<string name="app_name">Spielbrett - Gruppe 3</string>-->
+    <string name="user">user</string>
+    <string name="lottiKarotti">lottikarotti</string>
+    <string name="buttonOpenRoom">open room</string>
+    <string name="buttonJoinRoom">join room</string>
+    <string name="instructions">instructions</string>
+    <string name="highscore">highscore ranking</string>
+    <string name="settings">settings</string>
+    <string name="about">about</string>
+    <string name="cc">(c)_gruppe_D_3</string>
+    <string name="marginTop">8dp</string>
+    <string name="marginStart">8dp</string>
+    <string name="marginEnd">8dp</string>
+    <string name="backgroundDescription">backgroundlk</string>
+    <string name="createUser">create User</string>
+    <string name="editUserName">user name</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="backButton">backToMainMenu</string>
+</resources>
