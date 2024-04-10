@@ -6,15 +6,17 @@ plugins {
 }
 
 android {
-    namespace 'com.example.spielbrett_gruppe3'
+    namespace 'com.example.spielbrett-gruppe3'
     compileSdk 34
 
+
     defaultConfig {
-        applicationId "com.example.spielbrett_gruppe3"
+        applicationId "com.example.spielbrett-gruppe3"
         minSdk 29
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -32,6 +34,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
+            finalizedBy jacocoTestReport
+        }
+    }
+
     kotlinOptions {
         jvmTarget = '1.8'
     }
@@ -53,7 +62,6 @@ android {
         }
     }
 }
-
 tasks.register('jacocoTestReport', JacocoReport) {
     dependsOn 'testDebugUnitTest'
 
