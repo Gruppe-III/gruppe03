@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.spielbrett_gruppe3.R;
+
 public class TwoPlayers extends AppCompatActivity {
 
     public ImageButton TwoPlayersCheck;

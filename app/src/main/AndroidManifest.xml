@@ -14,22 +14,22 @@
         android:theme="@style/Theme.Gruppe03"
         tools:targetApi="31">
         <activity
-            android:name=".FourPlayers"
+            android:name="com.example.gruppe03.FourPlayers"
             android:exported="true" />
         <activity
-            android:name=".ThreePlayers"
+            android:name="com.example.gruppe03.ThreePlayers"
             android:exported="true" />
         <activity
-            android:name=".TwoPlayers"
+            android:name="com.example.gruppe03.TwoPlayers"
             android:exported="true" />
         <activity
-            android:name=".PopUp1"
+            android:name="com.example.gruppe03.PopUp1"
             android:exported="true" />
         <activity
-            android:name=".MenuScreenActivity"
+            android:name="com.example.gruppe03.MenuScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".FirstScreenActivity"
+            android:name="com.example.gruppe03.FirstScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
