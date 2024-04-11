@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gruppe03.MenuScreenActivity"
+    android:background="@drawable/img_2">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spiel_starten" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="264dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:srcCompat="@drawable/einstellungen" />
+</androidx.constraintlayout.widget.ConstraintLayout>

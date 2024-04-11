@@ -8,6 +8,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -15,7 +16,37 @@
         android:theme="@style/Theme.SpielbrettGruppe3"
         tools:targetApi="31">
         <activity
-            android:name="activity.MainActivity"
+            android:name="com.example.gruppe03.SpinCarrot"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.GoThreeFields"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.GoTwoFields"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.GoOneField"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.DrawCard"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.FourPlayers"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.ThreePlayers"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.TwoPlayers"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.PopUp1"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.MenuScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.gruppe03.FirstScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
