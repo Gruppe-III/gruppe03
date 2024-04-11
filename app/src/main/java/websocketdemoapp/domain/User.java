@@ -3,9 +3,10 @@ package websocketdemoapp.domain;
 public class User {
     private String id;
     private String username;
+    private String password;
     private double points;
 
-    private static long counter = 1;
+    //private static long counter = 1;
 
     public User() {
         //default
@@ -36,6 +37,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public double getPoints() {

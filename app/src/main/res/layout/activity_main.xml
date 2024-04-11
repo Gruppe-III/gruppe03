@@ -5,9 +5,32 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context="websocketdemoapp.activities.MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    
+    
+    <!--<TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +49,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/textViewResponse"
@@ -36,10 +59,10 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />
+        app:layout_constraintStart_toStartOf="parent" />
+        <!--app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />-->
 
-    <Button
+    <!--<Button
         android:id="@+id/buttonSendMsg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,5 +79,5 @@
         android:text="Go to User Activity"
         app:layout_constraintTop_toBottomOf="@+id/buttonSendMsg"
         app:layout_constraintStart_toStartOf="@+id/buttonSendMsg"
-        app:layout_constraintEnd_toEndOf="@+id/buttonSendMsg"/>
+        app:layout_constraintEnd_toEndOf="@+id/buttonSendMsg"/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

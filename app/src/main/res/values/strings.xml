@@ -1,10 +1,12 @@
 <resources>
-    <string name="app_name">WebSocketDemoApp</string>
+    <string name="app_name">Lotti Karotti Online</string>
     <!--for user_activity-->
-    <string name="action_add">Add</string>
-    <string name="action_delete">Delete</string>
-    <string name="action_update">Update</string>
-    <string name="hint_enter_username">Enter user name</string>
+    <string name="action_add">add</string>
+    <string name="action_delete">delete</string>
+    <string name="action_update">update</string>
+    <string name="hint_enter_username">enter user name</string>
+    <string name="registerButton">register</string>
+    <string name="backButton">back</string>
 
 
     <!--old Ressources-->
@@ -25,5 +27,5 @@
     <string name="createUser">create User</string>
     <string name="editUserName">user name</string>
     <string name="enter_user_name">Enter User Name</string>
-    <string name="backButton">backToMainMenu</string>
+    <!--<string name="backButton">backToMainMenu</string>-->
 </resources>

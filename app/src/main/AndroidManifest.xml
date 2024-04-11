@@ -16,10 +16,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="websocketdemoapp.activities.UserActivity"
+            android:name="websocketdemoapp.activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="websocketdemoapp.activities.StartMenu"
+            android:name="websocketdemoapp.activities.UserRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="websocketdemoapp.activities.StartMenuActivity2"
             android:exported="false" />
         <activity
             android:name="websocketdemoapp.activities.MainActivity"
