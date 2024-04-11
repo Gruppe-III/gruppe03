@@ -5,33 +5,26 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuScreenActivity"
+    tools:context="com.example.gruppe03.MenuScreenActivity"
     android:background="@drawable/img_2">
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="409dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginTop="334dp"
-        android:layout_marginEnd="277dp"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="216dp"
         android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/spiel_starten" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="418dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="276dp"
-        android:layout_marginEnd="268dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="264dp"
         android:backgroundTint="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
         app:srcCompat="@drawable/einstellungen" />

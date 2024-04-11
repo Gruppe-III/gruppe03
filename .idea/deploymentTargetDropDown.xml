@@ -5,6 +5,9 @@
       <entry key="DrawCard">
         <State />
       </entry>
+      <entry key="GoOneField">
+        <State />
+      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
