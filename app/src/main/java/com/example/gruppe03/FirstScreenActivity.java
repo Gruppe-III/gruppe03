@@ -18,9 +18,10 @@ import com.example.spielbrett_gruppe3.R;
 
 public class FirstScreenActivity extends AppCompatActivity {
 
-    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button button;
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_first_screen);

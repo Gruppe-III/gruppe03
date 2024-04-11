@@ -41,32 +41,25 @@ public class PopUp1 extends AppCompatActivity {
         buttonDreiSpieler = findViewById(R.id.imageButton6);
         buttonVierSpieler = findViewById(R.id.imageButton7);
 
-        buttonZweiSpieler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                REQUEST_CODE = 2;
-                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
-                intent.putExtra("requestCode", REQUEST_CODE);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
+        String req = "requestCode";
+
+        buttonZweiSpieler.setOnClickListener(v -> {
+            REQUEST_CODE = 2;
+            Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+            intent.putExtra(req, REQUEST_CODE);
+            startActivityForResult(intent, REQUEST_CODE);
         });
-        buttonDreiSpieler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                REQUEST_CODE = 3;
-                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
-                intent.putExtra("requestCode", REQUEST_CODE);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
+        buttonDreiSpieler.setOnClickListener(v -> {
+            REQUEST_CODE = 3;
+            Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+            intent.putExtra(req, REQUEST_CODE);
+            startActivityForResult(intent, REQUEST_CODE);
         });
-        buttonVierSpieler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                REQUEST_CODE = 4;
-                Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
-                intent.putExtra("requestCode", REQUEST_CODE);
-                startActivityForResult(intent, REQUEST_CODE);
-            }
+        buttonVierSpieler.setOnClickListener(v -> {
+            REQUEST_CODE = 4;
+            Intent intent = new Intent(PopUp1.this, TwoPlayers.class);
+            intent.putExtra(req, REQUEST_CODE);
+            startActivityForResult(intent, REQUEST_CODE);
         });
 
 }

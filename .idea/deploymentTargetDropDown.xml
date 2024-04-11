@@ -2,27 +2,8 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="DrawCard">
-        <State />
-      </entry>
-      <entry key="GoOneField">
-        <State />
-      </entry>
       <entry key="app">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Vojticek\.android\avd\Small_Phone_API_VanillaIceCream.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-04T14:17:08.023886900Z" />
-        </State>
+        <State />
       </entry>
     </value>
   </component>

@@ -30,11 +30,8 @@ public class ThreePlayers extends AppCompatActivity {
 
         ThreePlayersCheck = findViewById(R.id.ToCheck);
 
-        ThreePlayersCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent to game field
-            }
+        ThreePlayersCheck.setOnClickListener(v -> {
+            //Intent to game field
         });
 
     }

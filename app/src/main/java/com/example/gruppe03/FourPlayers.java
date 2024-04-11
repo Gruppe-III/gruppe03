@@ -29,11 +29,8 @@ public class FourPlayers extends AppCompatActivity {
         });
 
         FourPlayersCheck = findViewById(R.id.ToCheck);
-        FourPlayersCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Intent to game field
-            }
+        FourPlayersCheck.setOnClickListener(v -> {
+            //Intent to game field
         });
     }
 }
