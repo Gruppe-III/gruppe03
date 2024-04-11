@@ -27,12 +27,8 @@ public class SpinCarrot extends AppCompatActivity {
         });
         button1 = findViewById(R.id.button);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                //Intent to game field
-            }
+        button1.setOnClickListener(v -> {
+            //Intent to game field
         });
     }
 }

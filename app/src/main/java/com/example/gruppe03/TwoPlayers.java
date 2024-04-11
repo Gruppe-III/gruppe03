@@ -31,23 +31,20 @@ public class TwoPlayers extends AppCompatActivity {
 
         TwoPlayersCheck = findViewById(R.id.ToCheck);
         int rC = getIntent().getIntExtra("requestCode", 0);
-        TwoPlayersCheck.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(rC==2)
-                {
-                    //Intent to game field
-                }
-                if(rC==3)
-                {
-                    Intent intent = new Intent(TwoPlayers.this, ThreePlayers.class);
-                    startActivity(intent);
-                }
-                if(rC==4)
-                {
-                    Intent intent = new Intent(TwoPlayers.this, FourPlayers.class);
-                    startActivity(intent);
-                }
+        TwoPlayersCheck.setOnClickListener(v -> {
+            if(rC==2)
+            {
+                //Intent to game field
+            }
+            if(rC==3)
+            {
+                Intent intent = new Intent(TwoPlayers.this, ThreePlayers.class);
+                startActivity(intent);
+            }
+            if(rC==4)
+            {
+                Intent intent = new Intent(TwoPlayers.this, FourPlayers.class);
+                startActivity(intent);
             }
         });
 

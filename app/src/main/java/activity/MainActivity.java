@@ -30,13 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Button, um zur UserActivity zu wechseln
         Button userButton = findViewById(R.id.user);
-        userButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Starte UserActivity
-                Intent intent = new Intent(MainActivity.this, UserActivity.class);
-                startActivity(intent);
-            }
+        userButton.setOnClickListener(v -> {
+            // Starte UserActivity
+            Intent intent = new Intent(MainActivity.this, UserActivity.class);
+            startActivity(intent);
         });
     }
 }

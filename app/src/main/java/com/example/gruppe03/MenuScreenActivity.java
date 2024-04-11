@@ -41,12 +41,9 @@ public class MenuScreenActivity extends AppCompatActivity {
 
         ImageButton1 = findViewById(R.id.imageButton1);
 
-        ImageButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuScreenActivity.this, PopUp1.class);
-                startActivity(intent);
-            }
+        ImageButton1.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuScreenActivity.this, PopUp1.class);
+            startActivity(intent);
         });
     }
 
